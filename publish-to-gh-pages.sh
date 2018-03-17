@@ -8,7 +8,7 @@ mv .deploy_git/.git/ ./public/
 cd ./public
 git config user.name "msChen92"
 git config user.email "18936201961@139.com"
-#add commit timestamp
+##add commit timestamp
 git add .
 git commit -m "Travis CI Auto Builder at `date + "%Y-%m-%d %H:%M"`"
-git push --force --quiet "htpps://${github_token}@${GH_REF}" master:master
+git push --force --quiet "https://${trivas_token}@${GH_REF}" master:master
